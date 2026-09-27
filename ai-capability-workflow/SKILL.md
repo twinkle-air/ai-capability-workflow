@@ -1,12 +1,14 @@
 ---
 name: ai-capability-workflow
-description: Use only when creating, modifying, testing, or maintaining an AI skill or agent. Research sources, get user approval on a task checklist, build, sample-test, and deliver. Do not invoke for push, upload, publication, or release alone, or for unrelated tasks.
+description: Use only when creating, changing, testing, or maintaining the operational behavior or configuration of an AI skill or agent. Research sources, confirm a task checklist, build, sample-test, and deliver. Do not invoke for README or description edits, repository metadata, push, upload, publication, or release alone.
 license: MIT
 ---
 
 # AI Skill / Agent 开发工作流
 
-仅在用户要求**创建、修改、测试或维护 AI Skill / Agent** 时使用。单纯推送到仓库、上传、上架、发表或发布已有 Skill / Agent，不调用本工作流；普通编程、写作、资料检索、产品咨询等任务也不调用。若同一请求同时要求修改或测试 Skill / Agent，则针对该开发工作调用本工作流。
+仅在用户要求**创建、修改、测试或维护 AI Skill / Agent 的运行能力或配置**时使用，例如修改 Skill 指令、Agent 提示词、工具调用、工作逻辑或实际测试。判断依据是用户要求改变或验证的对象，而不是仓库里是否出现“Skill”“Agent”字样。
+
+仅编辑面向读者的 README、简介、使用说明、展示文案、仓库元数据，或单纯推送、上传、上架、发表、发布已有成品，均不触发本工作流；即使这些文档介绍的是 Skill / Agent，也按普通文档或发布任务处理。若同一请求还明确要求改变或测试 Skill / Agent 的运行能力或配置，则仅对该开发部分调用本工作流。
 
 本工作流按以下五个阶段执行。用户确认任务清单是构建前的硬关口；没有明确确认，就停在第一阶段。用户可修改清单，修改后提交新版再次确认。不能将沉默、超时或泛泛的“继续”推定为对未展示清单的确认。
 
