@@ -1,6 +1,6 @@
 # AI Skill / Agent 开发工作流
 
-**只用于 AI Skill / Agent 的创建、修改、测试与维护。**普通编程、资料检索、写作或介绍 AI Agent 原理等任务不调用本工作流。每个适用项目必须先研究并把详细任务清单交给用户确认，确认后才能构建。用户可修改清单；修改范围或验收标准时重新确认。
+**只用于 AI Skill / Agent 的创建、修改、测试与维护。**单纯推送到仓库、上传、上架、发表或发布已有 Skill / Agent 不调用本工作流；普通编程、资料检索、写作或介绍 AI Agent 原理等任务也不调用。若请求同时包含修改或测试，则针对该开发工作调用。每个适用项目必须先研究并把详细任务清单交给用户确认，确认后才能构建。用户可修改清单；修改范围或验收标准时重新确认。
 
 [English README](README.en.md)
 
@@ -34,7 +34,7 @@
 
 将完整的 `ai-capability-workflow/` 文件夹复制到 `~/.agents/skills/`。为了让后续相关任务稳定触发，可在 `~/.codex/AGENTS.md` 保留原有内容并追加：
 
-> 仅当用户要求创建、修改、测试或维护 AI Skill / Agent 时，读取并遵循用户级 `ai-capability-workflow` Skill；其他任务不要调用该工作流。
+> 仅当用户要求创建、修改、测试或维护 AI Skill / Agent 时，读取并遵循用户级 `ai-capability-workflow` Skill；单纯推送、上传、上架、发表或发布已有成品，以及其他任务，不调用该工作流。
 
 这作用于**当前主机的 Codex 环境**，不会自动安装到其他设备、云端会话或别人的账号。项目级指令和用户最新要求仍可能改变具体执行方式。安装后用 [正反例样本](ai-capability-workflow/assets/sample-request.md) 核对触发范围。
 

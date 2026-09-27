@@ -1,6 +1,6 @@
 # AI Skill / Agent Development Workflow
 
-**Use this workflow only to create, modify, test, or maintain an AI skill or agent.** Do not invoke it for ordinary programming, research, writing, or questions about AI agents. For an applicable project, research authoritative sources first and present a detailed task checklist to the user. Build only after the user confirms the current checklist version.
+**Use this workflow only to create, modify, test, or maintain an AI skill or agent.** Pushing, uploading, listing, publishing, or releasing an existing skill or agent alone does not trigger it. Ordinary programming, research, writing, and questions about AI agents do not trigger it either. If a request also includes modification or testing, apply the workflow to that development work. For an applicable project, research authoritative sources first and present a detailed task checklist to the user. Build only after the user confirms the current checklist version.
 
 [中文 README](README.md)
 
@@ -34,7 +34,7 @@ Share this repository for documentation or the complete `ai-capability-workflow/
 
 Copy the full folder to `~/.agents/skills/ai-capability-workflow/`. To make relevant future tasks trigger it consistently, preserve any existing `~/.codex/AGENTS.md` instructions and append this conditional rule:
 
-> Only when the user asks to create, modify, test, or maintain an AI skill or agent, load and follow the user-level `ai-capability-workflow` skill. Do not invoke this workflow for other tasks.
+> Only when the user asks to create, modify, test, or maintain an AI skill or agent, load and follow the user-level `ai-capability-workflow` skill. Do not invoke it for pushing, uploading, listing, publishing, or releasing an existing result alone, or for other tasks.
 
 This applies to Codex on the **current host**. It does not automatically sync to other devices, cloud sessions, or other people's accounts. Test both matching and unrelated prompts from the [synthetic sample](ai-capability-workflow/assets/sample-request.md).
 
