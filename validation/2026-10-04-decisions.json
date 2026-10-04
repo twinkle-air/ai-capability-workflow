@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "id": "A",
+      "action": "request_checklist_confirmation",
+      "may_modify_target": false,
+      "reason": "创建 Skill 触发工作流；须先提交详细任务清单并取得明确确认，当前不得构建。"
+    },
+    {
+      "id": "B",
+      "action": "request_checklist_confirmation",
+      "may_modify_target": false,
+      "reason": "用户要求变更 v1 清单；须展示包含缺失字段场景的新版并再次确认，当前不得构建或执行样本测试。"
+    },
+    {
+      "id": "C",
+      "action": "repair_and_retest",
+      "may_modify_target": true,
+      "reason": "已确认 v2 明确授权修改缺失字段处理；应依据外部执行器提供的失败证据修复，并重跑缺失字段及正常场景，完成必要检查与复核后交付。"
+    },
+    {
+      "id": "E",
+      "action": "deliver_test_report",
+      "may_modify_target": false,
+      "reason": "仅测试清单的两项检查均已执行；应报告正常场景通过、缺失字段场景失败及修复建议，并核实待测对象保持原状。对象失败不妨碍交付测试报告，测试授权不包含修复。"
+    },
+    {
+      "id": "F",
+      "action": "request_checklist_confirmation",
+      "may_modify_target": false,
+      "reason": "用户提出扩大修复范围，但尚未展示并确认修复清单；应提交新版清单取得确认后再修改。"
+    },
+    {
+      "id": "G",
+      "action": "ordinary_task",
+      "may_modify_target": false,
+      "reason": "仅推送已有成品不触发工作流；可按普通推送任务处理，未授权修改待测源文件或配置。"
+    },
+    {
+      "id": "H",
+      "action": "ordinary_task",
+      "may_modify_target": false,
+      "reason": "仅修改面向读者的 README 简介并推送不触发工作流；授权仅涵盖文档修改与推送，不包含待测源文件或配置。"
+    }
+  ]
+}
